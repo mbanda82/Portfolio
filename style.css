@@ -1,0 +1,764 @@
+
+/* Portfolio je u pripremi */
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+ 
+}
+
+@font-face {
+    font-family: face;
+    src: url(./fonts/FrancoisOne-Regular.ttf);
+}
+
+:root {
+
+    --primary: #dc9a17;
+    --secondary: #23d9e9;
+    --tertiary: #807f7c;
+    --quaternary: #610d0d;
+    --fifthy: #a91b1b;
+    --masa: #f18c87;
+
+}
+
+html {
+    height: 100%;
+}
+
+body {
+
+    height: 100%;
+   
+  
+}
+
+
+.okvir {
+    
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 1rem;
+   
+
+}
+
+.marta{
+
+    position: sticky;
+    top: 0;
+
+}
+
+.proba1 {
+
+    background: linear-gradient(25deg, rgba(240, 135, 164, 1) 0%, rgba(241, 140, 142, 1) 35%, rgba(35, 217, 233, 1) 100%);
+    font-family: face;
+    height: 10vh;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+
+}
+
+.lista * {
+
+    color:#4d4d49;
+    font-family: face;
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 2rem;
+
+
+}
+
+.lista a:hover{
+
+    color: #23d9e9;
+}
+
+.lista a:last-child:hover{
+    color: #f18c8e;
+}
+
+.lista a:nth-child(3):hover{
+    color: #f18c8e;
+}
+
+
+.proba2 {
+
+    background-color: #c4c0bd;
+    font-family: face;
+    height: 90vh;
+    padding-top: 5rem;
+  
+ 
+   
+}
+
+.proba2 h1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    color: #c16964;
+}
+
+.proba2 h2{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #4d4d49;
+}
+
+.proba2 img{
+
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 40vh;
+    height: 50vh;
+    
+
+}
+
+.proba3 {
+
+    font-family: face;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(200deg, rgba(240, 135, 164, 1) 0%, rgba(241, 140, 142, 1) 35%, rgba(35, 217, 233, 1) 100%);
+
+}
+
+#c-3 {
+
+    width: 60vh;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 1.2em;
+}
+
+
+
+#c-4 {
+
+    width: 60vh;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+
+}
+
+#c-5 {
+
+    width: 60vh;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+
+}
+
+
+.btn1 a{
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #4d4d49;
+    font-size: 1.4rem;
+    font-family: face;
+    background-color: #23d9e9;
+    width: 20vh;
+    height: 10vh;
+    border-color: var(--fifthy);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  
+  
+
+}
+
+
+.btn1 a:hover{
+
+    color: #f18c8e;
+}
+
+
+.proba4 {
+
+    background-color: #908f8e;
+    font-family: face;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    grid-column: 4;
+    grid-template-areas: "a b"
+                         "c d";
+
+
+}
+
+
+.foto1 .img-1 {
+
+    grid-area: a;
+    
+}
+
+.foto1 .img-2 {
+   
+    grid-area: b;
+   
+
+}
+
+
+.foto2 .img-3 {
+   
+   grid-area: c;
+
+}
+
+
+.foto2 .img-3 {
+   
+    grid-area: d;
+ 
+ }
+
+.img-1 img{
+
+    border-radius: 50%;
+    border: 2px solid #f18c87;
+}
+
+.img-2 img{
+
+    border-radius: 50%;
+    border: 2px solid #f18c87;
+
+}
+
+.img-3 img{
+
+    border-radius: 50%;
+    border: 2px solid #f18c87;
+
+}
+
+.img-4 img{
+
+    border-radius: 50%;
+    border: 2px solid #f18c87;
+}
+
+ #foto1 {
+
+    display: flex;
+    gap: 3rem;
+    margin: 2rem;
+    
+}
+
+#foto2 {
+
+    display: flex;
+    gap: 3rem;
+    margin: 2rem;
+}
+
+
+.btn2 a{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #4d4d49;
+    font-size: 1.4rem;
+    font-family: face;
+    background-color: #23d9e9;
+    width: 20vh;
+    height: 10vh;
+    border-color: var(--fifthy);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+   
+}
+
+
+.btn2 a:hover{
+
+    color: #f18c8e;
+   
+}
+
+.proba5 {
+
+
+    font-family: face;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    grid-column: 1/3;
+    grid-column: 5;
+    background: linear-gradient(25deg, rgba(240, 135, 164, 1) 0%, rgba(241, 140, 142, 1) 35%, rgba(35, 217, 233, 1) 100%);
+}
+
+
+.btn4 a{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #4d4d49;
+    font-size: 1.4rem;
+    font-family: face;
+    background-color: #f18c8e;
+    width: 20vh;
+    height: 10vh;
+    border-color: var(--fifthy);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+   
+
+}
+
+.btn4 a:hover{
+
+    color: #23d9e9;
+}
+
+.podaci {
+
+    line-height: 2.4;
+    font-size: 1.6rem;
+    grid-column: 1;
+    grid-column: 5;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+.p1,
+.p2,
+.p3,
+.p4 {
+
+    color: #4d4d49;
+}
+
+p {
+    color: var(--quaternary);
+}
+
+.podaci h3 {
+    font-size: 2rem;
+    color: #6e3b38;
+    
+}
+
+.mapa iframe{
+
+    margin: 0 0.5rem;
+    width: 45vh;
+    height: 30vh;
+    border: none;
+}
+
+
+.forma {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    color: rgb(60, 25, 20);
+    padding: 2rem 2rem;
+    
+   
+}
+
+
+.name #name{
+
+    width: 45vh;
+    height: 5vh;
+    border-radius: 2px;
+    border: none;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.email #email{
+
+    width: 45vh;
+    height: 5vh;
+    border-radius: 2px;
+    border: none;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.subject #subject{
+
+    width: 45vh;
+    height: 5vh;
+    border-radius: 2px;
+    border: none;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.message #message{
+
+    border-radius: 2px;
+    border: none;
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    width: 45vh;
+    height: 15vh;
+}
+
+
+.btn3 {
+    display: block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+
+}
+
+
+.btn3 #sub:hover {
+
+    color: #f18c8e;
+}
+
+.btn3 #res:hover {
+
+    color: #f18c8e;
+}
+
+.btn3 #sub {
+
+    background-color: #23d9e9;
+    width: 10vh;
+    height: 5vh;
+    font-family: face;
+    font-size: 0.8rem;
+    border-color: var(--fifthy);
+    border-radius: 5px;
+    color: rgb(60, 25, 20);
+    box-shadow: 0 2px 4px 2px #807f7c;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+.btn3 #res {
+
+    background-color: #23d9e9;
+    width: 10vh;
+    height: 5vh;
+    font-family: face;
+    font-size: 0.8rem;
+    border-color: var(--fifthy);
+    border-radius: 5px;
+    color: rgb(60, 25, 20);
+    box-shadow: 0 2px 4px 2px #807f7c;
+    cursor: pointer;
+    border: none;
+
+
+}
+
+
+.proba6 {
+
+    background-color: #4d4d49;
+    font-family: face;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    grid-column: 1/3;
+    grid-row: 6;
+
+
+}
+
+footer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.a1 #CODE {
+
+    color: #f18c8e;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+    
+
+}
+
+#CODE:hover {
+    color: #23d9e9;
+}
+
+.a2 #pocetna {
+
+    color: #f18c8e;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+
+}
+
+#pocetna:hover {
+
+    color:#23d9e9;
+
+}
+
+@media screen and (max-width: 768px){
+
+  .proba1{
+
+    height: 3rem;
+  }
+
+    .lista * {
+        
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0.1rem;
+        font-size: 1rem;
+        
+    }
+    
+    .proba2 h1{
+
+        font-size: 3rem;
+    }
+
+    .proba2 img{
+
+        width: 25vh;
+        height: 30vh;
+       
+        
+    }
+
+.proba3, #c-3, #c-4, #c-5{
+
+    display: grid;
+    grid-template-areas: "a "
+                         "b "
+                         "c "
+                         "d ";
+    grid-template-columns:repeat(1,1fr);
+   
+}
+
+#c-3{
+   display: none;
+  
+}
+
+#c-4{
+
+   grid-area: b;
+   font-size: 1rem;
+   width: 40vh;
+   justify-content: center;
+   align-items: center;
+   margin-top: 2.2rem;
+}
+
+#c-5{
+
+   grid-area: c;
+   font-size: 1rem;
+   width: 40vh;
+   justify-content: center;
+   align-items: center;
+}
+
+.dugme{
+
+    grid-area: d;
+}
+
+.proba4{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "a"
+                         "b";
+                
+}
+
+.img-1 img{
+    width: 20vh;
+    margin-left: 3rem;
+   
+}
+
+.img-2 img{
+    width: 20vh;
+    margin-right: 3rem;
+   
+}
+
+.img-3 img{
+
+    width: 20vh;
+    margin-left: 3rem;
+}
+
+.img-4 img{
+    width: 20vh;
+    margin-right: 3rem;
+   
+}
+
+.proba5{
+    height: 105vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4rem;
+}
+
+
+
+.mapa{
+
+    display: none;
+}
+
+.podaci{
+    line-height: 1.2;
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.podaci h3{
+
+    font-size: 1.4rem;
+    color: #6e3b38;
+    
+}
+
+.forma{
+
+    padding: 0.5rem 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.name #name{
+
+    width: 35vh;
+    padding-left: 0.5rem;
+}
+
+.email #email{
+
+        width: 35vh;
+        padding-left: 0.5rem;
+    }
+
+
+.subject #subject{
+
+    width: 35vh;
+    padding-left: 0.5rem;
+}
+
+.message #message{
+
+    width: 35vh;
+    padding-left: 0.5rem;
+}
+
+.btn3{
+    
+    font-size: 1.8rem;
+}
+
+
+
+.btn4 a{
+
+    width: 20vh;
+    height: 5vh;
+    background-color: #23d9e9;
+   
+}
+
+.btn4 a:hover{
+
+    color: #f18c8e;
+}
+
+.btn2 a{
+
+    width: 20vh;
+    height: 5vh;
+    
+    
+
+}
+
+.btn1 a{
+
+    width: 20vh;
+    height: 5vh;
+    background-color: #f18c8e;
+ 
+
+}
+
+.btn1 a:hover{
+
+    color: #23d9e9;
+}
+
+}
